@@ -1,0 +1,39 @@
+{
+  "files": {
+    "main.css": "/weather_forecast_app/static/css/main.50a559c6.css",
+    "main.js": "/weather_forecast_app/static/js/main.8ef7306f.js",
+    "static/media/Amsterdam.jpg": "/weather_forecast_app/static/media/Amsterdam.347a1ec862780a20e6b3.jpg",
+    "static/media/Berlin.jpg": "/weather_forecast_app/static/media/Berlin.3ff64f34b6de66cb35d7.jpg",
+    "static/media/Tokyo.jpg": "/weather_forecast_app/static/media/Tokyo.2046e8ec4b33bff24336.jpg",
+    "static/media/Paris.jpg": "/weather_forecast_app/static/media/Paris.b0370cb9bdb5620150e0.jpg",
+    "static/media/Cancun.jpg": "/weather_forecast_app/static/media/Cancun.f78b9ed1f2855f94e7dc.jpg",
+    "static/media/Rio_de_Janeiro.jpg": "/weather_forecast_app/static/media/Rio_de_Janeiro.bbdf09099e156c6181b7.jpg",
+    "static/media/Santorini.jpg": "/weather_forecast_app/static/media/Santorini.66e81fd7f01bf5ecd76a.jpg",
+    "static/media/Kyiv.jpg": "/weather_forecast_app/static/media/Kyiv.123554043723f95e8826.jpg",
+    "static/media/London.jpg": "/weather_forecast_app/static/media/London.ffc98188031087b76937.jpg",
+    "static/media/Singapore.jpg": "/weather_forecast_app/static/media/Singapore.7097d2e375ad43164362.jpg",
+    "static/media/Barcelona.jpg": "/weather_forecast_app/static/media/Barcelona.4ca41575a6aa6bf08d7b.jpg",
+    "static/media/CapeTown.jpg": "/weather_forecast_app/static/media/CapeTown.48c9e1d0db8661437f1f.jpg",
+    "static/media/Sydney.jpg": "/weather_forecast_app/static/media/Sydney.d29b3c5b2669bc80576f.jpg",
+    "static/media/Mumbai.jpg": "/weather_forecast_app/static/media/Mumbai.2314d05cea312bdfde75.jpg",
+    "static/media/Fiji.jpg": "/weather_forecast_app/static/media/Fiji.d183aa53246f27f872ff.jpg",
+    "static/media/Hawaii.jpg": "/weather_forecast_app/static/media/Hawaii.81ca1b167fc92ec6d08d.jpg",
+    "static/media/fog.png": "/weather_forecast_app/static/media/fog.eb0069f3ae915a244af2.png",
+    "static/media/snow.png": "/weather_forecast_app/static/media/snow.f256885799aef9fcd5ef.png",
+    "static/media/showers-day.png": "/weather_forecast_app/static/media/showers-day.5dc56a205262b2f5add8.png",
+    "static/media/clear-night.png": "/weather_forecast_app/static/media/clear-night.58bdc9cf2067e7f034e9.png",
+    "static/media/wind.png": "/weather_forecast_app/static/media/wind.25ae460549af40a49b44.png",
+    "static/media/partly_cloudy_day.png": "/weather_forecast_app/static/media/partly_cloudy_day.4cddbbff16762b7d3b43.png",
+    "static/media/thunder-rain.png": "/weather_forecast_app/static/media/thunder-rain.ea4c5e997f482c4a5639.png",
+    "static/media/rain.png": "/weather_forecast_app/static/media/rain.eea33d8e792f2c8bc059.png",
+    "static/media/cloudy.png": "/weather_forecast_app/static/media/cloudy.e1ed92b6073f4cc94d53.png",
+    "static/media/clear-day.png": "/weather_forecast_app/static/media/clear-day.cbd94ee0aba923ad33c0.png",
+    "index.html": "/weather_forecast_app/index.html",
+    "main.50a559c6.css.map": "/weather_forecast_app/static/css/main.50a559c6.css.map",
+    "main.8ef7306f.js.map": "/weather_forecast_app/static/js/main.8ef7306f.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.50a559c6.css",
+    "static/js/main.8ef7306f.js"
+  ]
+}
