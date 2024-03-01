@@ -25,13 +25,6 @@ const CountdownToTrip = ({ startDate }) => {
 
 	const [timeLeft, setTimeLeft] = useState(calculateTimeLeft())
 
-	// useEffect(() => {
-	//   const timer = setTimeout(() => {
-	//     setTimeLeft(calculateTimeLeft());
-	//   }, 1000);
-	//   return () => clearTimeout(timer);
-	// });
-
 	useEffect(() => {
 		const updateTimer = () => {
 			const newTimeLeft = calculateTimeLeft()

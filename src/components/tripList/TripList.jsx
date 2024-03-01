@@ -12,7 +12,6 @@ import CancunImage from '../../assets/Cancun.jpg'
 const TripList = () => {
 	const [selectedTrip, setSelectedTrip] = useState(null)
 	const [weatherData, setWeatherData] = useState(null)
-	const [selectedDay, setSelectedDay] = useState(0)
 	const [todayWeather, setTodayWeather] = useState(null)
 	const [showModal, setShowModal] = useState(false)
 	const [searchQuery, setSearchQuery] = useState('')
@@ -113,16 +112,6 @@ const TripList = () => {
 		fetchTodayWeather()
 	}, [selectedTrip])
 
-	// useEffect(() => {
-	// 	if (selectedTrip) {
-	// 		getTodayWeather(selectedTrip.destination).then(weatherData => {
-	// 			if (weatherData && weatherData?.days.length > 0) {
-	// 				setTodayWeather(weatherData.days[0])
-	// 			}
-	// 		})
-	// 	}
-	// }, [selectedTrip])
-
 	const scrollRight = () => {
 		tripListRef.current && tripListRef.current.parentElement.scrollBy({ left: 100, behavior: 'smooth' })
 	}
@@ -183,7 +172,6 @@ const TripList = () => {
 						/>
 					</div>
 				</div>
-
 				{selectedTrip && todayWeather && (
 					<div className="CurrentTripDetails">
 						<div className="modalWrapper">
@@ -205,9 +193,7 @@ const TripList = () => {
 						</div>
 					</div>
 				)}
-
 			</div>
-
 			{selectedTrip && (
 				<div className="tripDetailsWrapper">
 					{weatherData && (
@@ -229,13 +215,6 @@ const TripList = () => {
 										</li>
 									)
 								})}
-								{/* {weatherData?.days.map((day, index) => (
-									<li key={index} className="forecastDay">
-										<p>
-											{new Date(day.datetime).toLocaleDateString('en-US', { weekday: 'long' })}
-										</p>
-									</li>
-								))} */}
 							</ul>
 						</div>
 					)}

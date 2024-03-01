@@ -12,7 +12,6 @@ import RioDeJaneiroImage from '../../assets/Rio_de_Janeiro.jpg'
 import SingaporeImage from '../../assets/Singapore.jpg'
 import MumbaiImage from '../../assets/Mumbai.jpg'
 import HawaiiImage from '../../assets/Hawaii.jpg'
-import FijiImage from '../../assets/Fiji.jpg'
 import SantoriniImage from '../../assets/Santorini.jpg'
 import BarcelonaImage from '../../assets/Barcelona.jpg'
 
@@ -27,9 +26,8 @@ const cities = [
 	{ id: 10, name: 'Singapore', image: SingaporeImage },
 	{ id: 11, name: 'Mumbai', image: MumbaiImage },
 	{ id: 12, name: 'Hawaii', image: HawaiiImage },
-	{ id: 13, name: 'Fiji', image: FijiImage },
-	{ id: 14, name: 'Santorini', image: SantoriniImage },
-	{ id: 15, name: 'Barcelona', image: BarcelonaImage }
+	{ id: 13, name: 'Santorini', image: SantoriniImage },
+	{ id: 14, name: 'Barcelona', image: BarcelonaImage }
 ]
 
 const TripModal = ({ isOpen, onClose, onAddTrip, arrLength }) => {
@@ -42,7 +40,6 @@ const TripModal = ({ isOpen, onClose, onAddTrip, arrLength }) => {
 	const handleStartDateChange = value => {
 		setStartDate(value)
 		setIsStartDateActive(true)
-		setIsEndDateActive(true)
 		setEndDate('')
 	}
 
@@ -103,14 +100,13 @@ const TripModal = ({ isOpen, onClose, onAddTrip, arrLength }) => {
 							</div>
 							<div className="startDateBlock inputBlock">
 								<label className="label">
-									<span className="star">*</span> Select date:
+									<span className="star">*</span> Start date:
 								</label>
 								<input
-									// className={`startDateInput inputOpiotns ${isStartDateActive ? ' active' : ''}`}
-									className='startDateInput inputOpiotns'
-									type="date"
-									// value={isStartDateActive ? startDate : 'Select date'}
+									className="startDateInput inputOpiotns"
+									type={isStartDateActive ? 'date' : 'text'}
 									value={startDate}
+									placeholder="Select date"
 									onFocus={() => setIsStartDateActive(true)}
 									onBlur={() => setIsStartDateActive(false)}
 									min={new Date().toISOString().split('T')[0]}
@@ -120,20 +116,19 @@ const TripModal = ({ isOpen, onClose, onAddTrip, arrLength }) => {
 							</div>
 							<div className="endDateBlock inputBlock">
 								<label className="label">
-									<span className="star">*</span> Select date:
+									<span className="star">*</span> End date:
 								</label>
 								<input
-									// className={`endDateInput inputOpiotns${isEndDateActive ? ' active' : ''}`}
-									className='endDateInput inputOpiotns'
-									type="date"
-									// value={isEndDateActive ? endDate : 'Select date'}
+									className="endDateInput inputOpiotns"
+									type={isEndDateActive ? 'date' : 'text'}
 									value={endDate}
+									placeholder="Select date"
 									onFocus={() => setIsEndDateActive(true)}
 									onBlur={() => setIsEndDateActive(false)}
 									min={startDate}
 									max={maxEndDate}
 									onChange={e => handleEndDateChange(e.target.value)}
-									disabled={!isEndDateActive}
+									disabled={!startDate}
 								/>
 							</div>
 						</div>
