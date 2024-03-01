@@ -26,20 +26,11 @@ const CountdownToTrip = ({ startDate }) => {
 	const [timeLeft, setTimeLeft] = useState(calculateTimeLeft())
 
 	useEffect(() => {
-		const updateTimer = () => {
-			const newTimeLeft = calculateTimeLeft()
-			setTimeLeft(newTimeLeft)
-
-			if (newTimeLeft.seconds > 0) {
-				requestAnimationFrame(updateTimer)
-			}
-		}
-		requestAnimationFrame(updateTimer)
-
-		return () => {
-			cancelAnimationFrame(updateTimer)
-		}
-	}, [startDate])
+	  const timer = setTimeout(() => {
+	    setTimeLeft(calculateTimeLeft());
+	  }, 1000);
+	  return () => clearTimeout(timer);
+	});
 
 	return (
 		<div className="countdownTimer">
