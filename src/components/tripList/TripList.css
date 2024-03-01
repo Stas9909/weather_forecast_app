@@ -1,0 +1,231 @@
+.container {
+	padding: 0 40px 0 40px;
+  position: relative;
+  min-width: 500px;
+}
+
+.disposition{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.upperWrapper {
+	display: flex;
+	flex-direction: column;
+	align-items: start;
+  width: 77%;
+}
+
+.mainHeader {
+	font-size: 21px;
+}
+
+.inBold {
+	font-weight: bold;
+}
+
+.searchInput {
+	padding: 8px 16px;
+	margin: 8px 0;
+	box-sizing: border-box;
+	border: none;
+	background-color: #f2f2f2;
+	border-radius: 4px;
+	font-size: 16px;
+}
+
+.generalDataWrapper {
+	width: 100%;
+	display: flex;
+	flex-direction: row;
+	gap: 30px;
+	margin-top: 40px;
+}
+
+.tripListWrapper {
+	overflow-x: auto;
+	position: relative;
+	width: 75%;
+}
+
+.scrollButtonsContainer {
+	position: fixed;
+	left: 32%;
+	transform: translateX(-50%);
+	margin-top: 30px;
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	gap: 20px;
+}
+
+.scrollButton {
+	background-color: #f2f2f2;
+	border: none;
+	border-radius: 5px;
+	color: black;
+	width: 100px;
+	padding: 10px;
+	text-align: center;
+	text-decoration: none;
+	font-size: 16px;
+	cursor: pointer;
+}
+
+.tripList {
+	padding: 0;
+	display: flex;
+	flex-direction: row;
+	gap: 30px;
+	margin-top: 90px;
+	list-style-type: none;
+}
+
+.tripItem {
+	padding: 5px;
+	border: 1px solid #f2f2f2;
+	border-radius: 5px;
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+
+.divForImg {
+	height: 200px;
+	width: 200px;
+}
+
+.cityImg {
+	height: 100%;
+	width: 100%;
+}
+
+.addTripBtn {
+	background-color: #f2f2f2;
+	border: none;
+	border-radius: 5px;
+	color: black;
+	height: 200px;
+	width: 200px;
+	margin-top: 95px;
+	text-align: center;
+	text-decoration: none;
+	font-size: 16px;
+	cursor: pointer;
+}
+
+.tripDetailsWrapper,
+.daysList {
+	padding: 0;
+}
+
+.tripDetailsWrapper {
+	margin-top: 20px;
+}
+
+.forecastWeekHeader {
+	font-size: 16px;
+	text-align: start;
+	font-weight: bold;
+}
+
+.forecastWeekWrapper {
+  display: flex;
+  flex-wrap: wrap;
+	flex-direction: row;
+	gap: 30px;
+	list-style-type: none;
+	padding: 0;
+}
+
+.forecastDay {
+  display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.weekDay {
+  font-size: 16px;
+  margin-top: 0;
+  margin-bottom: 10px;
+}
+
+.icon {
+	height: 50px;
+	width: 50px;
+}
+
+.iconImg {
+	height: 100%;
+	width: 100%;
+}
+
+.temp {
+  font-size: 16px;
+  margin-bottom: 0;
+  margin-top: 10px;
+}
+
+.CurrentTripDetails {
+	width: 370px;
+  height: 542px;
+  /* min-width: 300px;
+  height: 550px;
+	float: right;  */
+  /* position: absolute;
+  right: 40px;
+  top: 20px; */
+  background-color: #031647;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  min-width: 240px;
+}
+
+.curentDay {
+  font-size: 20px;
+  color: #f2f2f2;
+  margin-bottom: 0;
+  margin-top: 0;
+}
+
+.forecastInModal {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+}
+
+.iconInModal {
+  height: 70px;
+  width: 70px;
+}
+
+.tempInModal {
+  font-size: 50px;
+  margin-top: 0;
+  margin-bottom: 0;
+  color: #f2f2f2;
+  position: relative;
+}
+
+.tempInModal::after {
+  content: '°C';
+  position: absolute;
+  top: 0.5em;
+  right: -1em; 
+  font-size: 0.3em; 
+}
+
+.destinationInModal {
+  font-size: 20px;
+  color: #f2f2f2;
+  margin-top: 0;
+}
+
+.countDown {
+  font-size: 20px;
+  color: #f2f2f2;
+  padding-top: 40px;
+}

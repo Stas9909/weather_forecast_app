@@ -1,0 +1,13 @@
+.countdownTimer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  font-size: 10px;
+  font-weight: bold;
+  color: #fff;
+  padding: 0 30px 0 30px;
+}
+
+.timeLeft {
+  font-size: 24px;
+}
